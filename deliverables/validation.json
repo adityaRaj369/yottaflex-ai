@@ -1,0 +1,170 @@
+{
+  "baseline_coverage": {
+    "approved": 2086,
+    "borderline_scores": 197,
+    "duplicate_requests": 147,
+    "high_existing_debt": 818,
+    "inclusive_term_boundary": 279,
+    "manual_review": 2498,
+    "missing_income_proof": 605,
+    "rejected": 1416,
+    "short_employment_tenure": 1989
+  },
+  "baseline_findings": 0,
+  "counts": {
+    "affordability_check": 6000,
+    "applicant": 10000,
+    "check_facility": 7099,
+    "credit_facility": 11827,
+    "decision": 6000,
+    "disbursement": 688,
+    "document": 12000,
+    "document_event": 34790,
+    "employment": 20000,
+    "income_record": 40000,
+    "loan_application": 6000,
+    "loan_product": 4,
+    "repayment_schedule": 66121
+  },
+  "eligible_applications": 1395,
+  "eligible_as_of": "2026-07-01T00:00:00.000000",
+  "findings": [
+    {
+      "application_id": "LOAN-2026-000002",
+      "issue_type": "disbursement_prerequisites"
+    },
+    {
+      "application_id": "LOAN-2026-000002",
+      "issue_type": "duplicate_disbursed_twice"
+    },
+    {
+      "application_id": "LOAN-2026-000003",
+      "issue_type": "term_outside_product"
+    },
+    {
+      "application_id": "LOAN-2026-000004",
+      "issue_type": "schedule_reconciliation"
+    },
+    {
+      "application_id": "LOAN-2026-000005",
+      "issue_type": "decision_before_checks"
+    },
+    {
+      "application_id": "LOAN-2026-000006",
+      "issue_type": "income_conflict"
+    }
+  ],
+  "injected_cases": 5,
+  "injected_cases_detected": 5,
+  "outcomes_by_product": [
+    {
+      "applications": 567,
+      "outcome": "approved",
+      "product_id": "P01"
+    },
+    {
+      "applications": 654,
+      "outcome": "manual_review",
+      "product_id": "P01"
+    },
+    {
+      "applications": 280,
+      "outcome": "rejected",
+      "product_id": "P01"
+    },
+    {
+      "applications": 478,
+      "outcome": "approved",
+      "product_id": "P02"
+    },
+    {
+      "applications": 617,
+      "outcome": "manual_review",
+      "product_id": "P02"
+    },
+    {
+      "applications": 404,
+      "outcome": "rejected",
+      "product_id": "P02"
+    },
+    {
+      "applications": 525,
+      "outcome": "approved",
+      "product_id": "P03"
+    },
+    {
+      "applications": 612,
+      "outcome": "manual_review",
+      "product_id": "P03"
+    },
+    {
+      "applications": 363,
+      "outcome": "rejected",
+      "product_id": "P03"
+    },
+    {
+      "applications": 514,
+      "outcome": "approved",
+      "product_id": "P04"
+    },
+    {
+      "applications": 616,
+      "outcome": "manual_review",
+      "product_id": "P04"
+    },
+    {
+      "applications": 370,
+      "outcome": "rejected",
+      "product_id": "P04"
+    }
+  ],
+  "reproducibility": {
+    "archive_sha256": "bad386551b2b00fc38eeee6bd7f8cee6a6f104c410bd7b8395ad16a77e39225f",
+    "checksums_match": true,
+    "row_counts_match": true,
+    "runs": 2
+  },
+  "rule_counts": {
+    "AFFORDABILITY": 1267,
+    "BORDERLINE": 580,
+    "DOCUMENTS": 593,
+    "DUPLICATE": 147,
+    "EMPLOYMENT_TENURE": 1325,
+    "INCOME_CONFLICT": 1,
+    "LOW_SCORE": 2,
+    "POLICY_PASS": 2084,
+    "PRODUCT_TERM": 1
+  },
+  "seed": 20261022,
+  "sha256": {
+    "csv/affordability_check.csv": "cd497cb7678d1fc85d6888524d4da52b077f6604c781def7330729dc7c696bba",
+    "csv/applicant.csv": "0a0bdd8f64bcd3d29ef0572056c91dfd444c4fc9309243266808b158861a1b9c",
+    "csv/check_facility.csv": "78ee53f6308269b1b95c1564f78f235d6af8afc585e065acb648ee33e3d7f91e",
+    "csv/credit_facility.csv": "a48d33fb62760028fb9f67b5fa740fe3383c0c0655f1bac883dbf6634c2c9e01",
+    "csv/decision.csv": "ef63aa04f48d23c7ef842e590e845de71518243a4dfb03df17da7e8dfdd65c88",
+    "csv/disbursement.csv": "262fcdffacd33572036fcc27cd0b42c02c53cc581da360f96734783b64b4265b",
+    "csv/document.csv": "27609d0eedc8db502d0a41aced0480c5ce7ada27f4ca7052a8339ddf71631898",
+    "csv/document_event.csv": "4b07a6b20d13ac6a9d2459019cfba7c5459bdaca0572868c44a892698f850af8",
+    "csv/employment.csv": "1f3b52588d6420ad6d8e61e34be29785a115e85aac4bcbbbebd3e2d57da07108",
+    "csv/income_record.csv": "387369832558ae19153d32721b3707205f7d3141ab1ccb5261d23c67c30955ad",
+    "csv/loan_application.csv": "0a06cf699a0a314f6983777438e43e1ade918b4d49365ceaf833a17e881fada1",
+    "csv/loan_product.csv": "1726d2b584d96d59e4f429c630496e9d399495374ce1b69a558d001b264c91e9",
+    "csv/repayment_schedule.csv": "22016b526758fba9786c789f27a2c8d97c90be9ec02e8e090b635ea6a2a299c1",
+    "json/affordability_check.json": "f03ef0271d456d6f79de8474669446d3b2fb287d03e7fbfc595eddcdeb921487",
+    "json/applicant.json": "620a7fa43d266bd6943d2e8e2b86d77bc5ef82fcb35d5e587fbdfaabe6e9b291",
+    "json/check_facility.json": "b1cff2b482533a0199515fc4be0a11fe548e3d35dabd20ccd74426b1bdbbd2e3",
+    "json/credit_facility.json": "00e6027baa8768ac681aff4260218bd3d645a7d8255cb4400c86ba6caf8a4387",
+    "json/decision.json": "41ee6d18eac8c184526dcc2b2386df738b20a6150f12809ee9efd46b6f44dfcb",
+    "json/disbursement.json": "f94c671afa25596d7c265a74d120c4c022b71bbf1974465d63393b16ea94a730",
+    "json/document.json": "b85a3b6a1b1bd790aa05f99d09fa8c5014e17ecd2a7c36563370ede3de3acd0a",
+    "json/document_event.json": "f6544518e678513bf15d93dc8197b26bee95bf355fd773d83c18ee9245b3f52a",
+    "json/employment.json": "a29a939002434845fa06ecab596bae4ce0028a5d81cf1d327b76660a8c99456f",
+    "json/income_record.json": "3f07bfc40d7381e87dbe623d4de2c5520835cb0da7638db7d3ea5ace6e2984c8",
+    "json/loan_application.json": "ec01d2ac06fba753ff725349a76c9e2034df70aebe5ad1f83a865fa2e98de16a",
+    "json/loan_product.json": "0203fc56e7e3bac2d4c8978cf00050d3f45256f1ecc452d79ff1a992eb204df0",
+    "json/repayment_schedule.json": "4382c320577056bfc2fb73c2b78771e69b8481e628a7f93b7dcc5cf3e7ba5cf1",
+    "seed.sql": "a98f7eee4fc6102c2ec71388160bd698f4a64d4b93e0927a55ad2cd5df231190"
+  },
+  "sql_round_trip": true,
+  "unexpected_findings": 0
+}
